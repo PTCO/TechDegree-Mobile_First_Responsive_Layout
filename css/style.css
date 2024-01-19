@@ -1,0 +1,63 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+header, .column, main, nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main{
+    padding: 0 1em;
+}
+
+#Home p {
+    margin-top: 1.5em;
+}
+
+#Home{
+    margin: 1.5em 0 2em  0;
+}
+
+.column{
+    flex: 1 175px;
+}
+
+.project{
+    margin-bottom: .75em;
+}
+
+h1{
+    margin-bottom: 0;
+}
+
+h1, h2, h3, h4{
+    font-family: Lobster;
+    text-shadow: 0px 2px 0 lightgreen;
+}
+
+nav{
+    margin-top: 1em;
+}
+
+nav li{
+    margin: 1.25em 0;
+}
+
+a{
+    font-size: 1.25em;
+}
+
+
+img{
+    width: 70%;
+}
+
+.project img{
+    width: 100%;
+}
