@@ -391,6 +391,7 @@ template {
 ul, ol {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 /* Links
@@ -402,4 +403,29 @@ ul, ol {
 
  a {
     text-decoration: none;
+ }
+
+/* Headers
+   ========================================================================== */
+
+/**
+ * Add the remove default header tag styles
+ */
+
+ h1,
+ h2,
+ h3,
+ h4 {
+    margin: 0;
+ }
+
+ /* Paragraphs
+   ========================================================================== */
+
+ /**
+ * Add the remove default paragraph tag styles
+ */
+
+ p{
+    margin: 0;
  }

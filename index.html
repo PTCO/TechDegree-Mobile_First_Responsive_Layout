@@ -15,25 +15,27 @@
     <title>PTCO</title>
 </head>
 <body>
-    <header>
+    <header id="Home">
         <h1>Brandon Durand</h1>
         <nav>
             <ul>
                 <li><a href="#Home">HOME</a></li>
                 <li><a href="#Portfolio">PORTFOLIO</a></li>
+                <li><a href="#Skills">SKILS</a></li>
                 <li><a href="#Contact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="Home" class="column">
+        <div id="Bio" class="column">
             <img src="./images/responsive-layout-profile.png" alt="Picture of Student">
             <p>
                 Hi! I'm a front-end developer who loves responsive design and css. I recently fiinished a degree in front-end web development at Treehouse and am excited to put all my skills to use!
             </p>
         </div>
-        <div id="Portfolio" class="column">
-            <h2>PORTFOLIO</h2>
+        
+        <div  class="column">
+            <h2 id="Portfolio">PORTFOLIO</h2>
             <div class="project">
                 <img src="./images/portfolio-1.png" alt="Marketing Website Thumbnail">
                 <h3>Marketing Page</h3>
@@ -65,7 +67,29 @@
                 <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
             </div>
         </div>
-        <div class="column">
+        <div id="Skills" class="column">
+            <h2>SKILLS</h2>
+            <div class="Skills">
+                <h4>Frontend</h4>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>BOOTSTRAP</li>
+                    <li>SASS</li>
+                    <li>JQUERY</li>
+                    <li>JAVASCRIPT</li>
+                </ul>
+            </div>
+            <div class="Skills">
+                <h4>Backend</h4>
+                <ul>
+                    <li>NODE.JS</li>
+                    <li>MONGODB</li>
+                    <li>EXPRESS</li>
+                </ul>
+            </div>
+        </div>
+        <div id="Contact" class="column">
             <h2>CONTACT</h2>
             <p>
                 If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!
@@ -80,9 +104,17 @@
             </ul>
         </div>
     </main>
-    <footer id="Contact">
+    <footer>
         <h4>Brandon Durand</h4>
-        <a href="#Home">BACK TO TOP</a>
+        <nav >
+            <ul id="subNav">
+                <li><a href="#Home">HOME</a></li>
+                <li><a href="#Portfolio">PORTFOLIO</a></li>
+                <li><a href="#Skills">SKILS</a></li>
+                <li><a href="#Contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <a id="backtotop" href="#Home">BACK TO TOP</a>
     </footer>
 </body>
 </html>

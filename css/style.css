@@ -2,62 +2,226 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-
-
-header, .column, main, nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-main{
-    padding: 0 1em;
-}
-
-#Home p {
-    margin-top: 1.5em;
-}
-
-#Home{
-    margin: 1.5em 0 2em  0;
-}
-
-.column{
-    flex: 1 175px;
-}
-
-.project{
-    margin-bottom: .75em;
-}
-
-h1{
-    margin-bottom: 0;
+body{
+    height: 100vh;
 }
 
 h1, h2, h3, h4{
     font-family: Lobster;
-    text-shadow: 0px 2px 0 lightgreen;
+    text-shadow: 0 2px 0 lightgreen;
+}
+
+h1{
+    margin: .5em 0;
+}
+h2{
+    margin: 1em 0;
+}
+h3{
+    margin:  2em 0 1em 0;
+    border: 2px solid #c8c8c8;
+    padding: .35em;
+}
+h4{
+    margin: 1.5em 0;
+}
+
+
+header, nav li, main, footer, .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 nav{
-    margin-top: 1em;
+    height: fit-content;
+}
+
+header{
+    background: #c8c8c8;
+}
+
+footer{
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 1em;
+    border-top: 1.5px solid #111;
+}
+footer a{
+    align-self: center;
+    border: 1.5px solid lightgreen;
+    padding: .45em;
+    background: lightgreen;
 }
 
 nav li{
-    margin: 1.25em 0;
+    height: 3em;
+    background: lightgreen;
 }
 
 a{
-    font-size: 1.25em;
+    color: white;
+    font-family: cursive;
 }
 
+/*  CLASSESS  */
 
-img{
-    width: 70%;
+.column{
+    flex-wrap: wrap;
+    margin: 3em 0;
+    padding: 0 .75em;
 }
-
-.project img{
+.column p {
+    line-height: 1.5em;
+}
+.column img{
     width: 100%;
+}
+
+.Skills{
+    flex: .45
+}
+.Skills ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.Skills li{
+    width: fit-content;
+    background: violet;
+    border-radius: 5px;
+    padding: .35em;
+    margin: .5em ;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.Skills:nth-child(2) li{
+    background: rgb(159, 158, 158);
+}
+
+.project{
+    margin: .75em 0;
+}
+
+/* IDS */
+
+#Skills{
+    flex-direction: row;
+    justify-content: space-between;
+}
+#Skills h2{
+    width: 100%;
+}
+#Skills h4{
+    border: 2px solid #c8c8c8;
+    padding: .35em;
+}
+
+#Bio img{
+    width: 70%;
+    margin: 1em auto;
+}
+
+#subNav{
+    display: none;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px){
+    #backtotop{
+        display: none;
+    }
+    
+    nav ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        background: lightgreen;
+    }
+    
+    nav ul li{
+        margin: 0 1em;
+    }
+    #subNav{
+        display: flex;
+        background: none;
+    }
+    #subNav li{
+        margin: 0 0 0 .5em;
+        background: none;
+    }
+    footer nav{
+        align-self: center;
+    }
+    .column{
+        flex-direction: row;
+        padding: 0 2em;
+    }
+    h2{
+        width: 100%;
+    }
+    .project{
+        flex: 1 300px;
+        margin: 1.5em .5em;
+    }
+    #Bio img{
+        min-width: 30%;
+        flex: .4;
+        margin: 0;
+    }
+    #Bio p{
+        order: -1;
+        flex: .6;
+        padding-right: .25em;
+        font-size: 1.2em;
+        text-align: start;
+    }
+    #Contact{
+        flex-direction: column;
+    }
+    #Contact p{
+        max-width: 70%;
+        margin: .75em auto;
+    }
+    .Skills ul{
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px){
+    header{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5em 2em;
+    }
+    #Bio p{
+        font-size: 1.52em;
+        padding-right: 1em;
+    }
+    .project{
+        min-width: 30%;
+    }
+    .project p{
+        max-width: 98%;
+        margin: 0 auto;
+    }
+    #Contact p{
+        max-width: 46%;
+    }
+    h3{
+        margin-bottom: .75em;
+    }
+}
+
+@media (min-width: 1440px) {
+    .project p, #Contact p{
+        font-size: 1.45em;
+    }
+    #Contact p{
+        max-width: 50%;
+    }
 }
